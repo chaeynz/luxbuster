@@ -1,5 +1,19 @@
 services:
   luxbuster:
-    image: mikoshi/luxbuster:latest
+    image: mikoshi/luxcontrol:latest
     ports:
       - "8000:8000"
+    volumes:
+      - ./config/configuration.py:/app/luxcontrol/luxcontrol/configuration.py
+
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: luxcontrol
+      POSTGRES_USER: luxcontrol
+      POSTGRES_PASSWORD: yourpassword
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
