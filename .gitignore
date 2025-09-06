@@ -2,3 +2,5 @@ __pycache__/
 *.py[codz]
 
 **/*.sqlite3
+
+**/*.env
