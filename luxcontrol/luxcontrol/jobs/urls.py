@@ -2,5 +2,5 @@ from django.urls import path
 from .views import JobsView
 
 urlpatterns = [
-    path('/', JobsView.as_view(), name='idk'),
+    path('', JobsView.as_view(), name='jobs'),
 ]
