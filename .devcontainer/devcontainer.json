@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Luxbuster Dev Container",
+	"name": "Luxbuster",
 
 	// More info: https://containers.dev/guide/dockerfile
     "dockerComposeFile": [
@@ -12,7 +12,8 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
